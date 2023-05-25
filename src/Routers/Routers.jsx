@@ -6,15 +6,19 @@ import Loader from "../Components/Loader/Loader";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Login from "../Pages/Login";
 import Home from "../Pages/Home";
+import ForgetPassword from "../Pages/ForgetPassword";
+import ResetPassword from "../Pages/ResetPassword";
 
 function Routers() {
   return (
     <div className="">
-       <React.Suspense fallback={<Loader />}>
+      <React.Suspense fallback={<Loader />}>
         <Router>
           <Routes>
             <Route element={<LoginLayout />}>
               <Route path="/" element={<Login />} />
+              <Route path="/forget-password" element={<ForgetPassword />} />
+              <Route path="/reset-password" element={<ResetPassword />} />
             </Route>
             <Route element={<MainLayout />}>
               <Route path="/home" element={<Home />} />

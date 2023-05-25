@@ -4,15 +4,14 @@ import Navbar from "../Navbar/Navbar";
 import "../style.css";
 import SearchBar from "../SearchBar/SearchBar";
 import DropDown from "../DropDown/DropDown";
-import { getCountries } from "../../Redux/Action";
 const HomeComp = () => {
 
   const dispatch = useDispatch();
   const countries = useSelector((state) => state.countries);
 
-  useEffect(() => {
-    dispatch(getCountries());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(getCountries());
+  // }, [dispatch]);
 
  
 
