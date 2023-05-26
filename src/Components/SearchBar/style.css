@@ -1,0 +1,21 @@
+.Search_Box {
+  position: relative;
+}
+.search_icon {
+  position: absolute;
+  top: 24%;
+  left: 6%;
+  z-index : 1;
+}
+
+.search_input {
+  background-color: #ffffff;
+  color: #cca677;
+  height: 50px;
+  width: 100%;
+  padding-left: 70px;
+  border: none;
+  outline: none;
+  caret-color: #cca677;
+  border: 1px solid #cca677;
+}

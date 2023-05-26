@@ -3,11 +3,12 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import MainLayout from "../Layout/MainLayout";
 import LoginLayout from "../Layout/LoginLayout";
 import Loader from "../Components/Loader/Loader";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 import Login from "../Pages/Login";
 import Home from "../Pages/Home";
 import ForgetPassword from "../Pages/ForgetPassword";
 import ResetPassword from "../Pages/ResetPassword";
+import Data from "../Pages/Data";
 
 function Routers() {
   return (
@@ -22,6 +23,7 @@ function Routers() {
             </Route>
             <Route element={<MainLayout />}>
               <Route path="/home" element={<Home />} />
+              <Route path="/data-management" element={<Data />} />
             </Route>
           </Routes>
         </Router>

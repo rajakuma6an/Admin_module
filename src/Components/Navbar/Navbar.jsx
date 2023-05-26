@@ -1,15 +1,22 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { FaMoon } from "react-icons/fa";
-import "../style.css";
+import { AiOutlineLogout } from "react-icons/ai";
+import { FiBell } from "react-icons/fi";
+import "./style.css";
 
-const Navbar = () => {
+const Navbar = ({ navigate }) => {
   return (
-    <nav className={"dark_bg"}>
-      <div className=" py-3 d-flex align-items-center justify-content-between">
-      NavBar
+    <nav className="navbar d-flex justify-content-between px-5 py-3">
+      <div className="">Admin</div>
+      <div>
+        <FiBell size={28} color="#cca677" style={{ cursor: "pointer",marginRight : "20px" }} />
+        <AiOutlineLogout
+          onClick={() => navigate("/")}
+          size={28}
+          color="#cca677"
+          style={{ cursor: "pointer" }}
+        />
       </div>
-    </nav>
+    </nav> 
   );
 };
 
